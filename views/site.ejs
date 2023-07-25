@@ -1,0 +1,18 @@
+<h1>사이트입니다</h1>
+<a href="/">메인이동</a>
+
+<table border="1">
+    
+<% for(let i =0; i < context.site[0].length; i++) {%>
+    <tr>
+        <% for(let j=0; j < context.site[0].length; j++) {%>
+        <td> 
+            <%= context.site[i][j] %>
+        </td>
+    <% }%>
+    </tr>
+<% }%>
+
+</table>
+
+<%= Object.keys(Object.values(context.site)) %>

@@ -1,0 +1,23 @@
+<h1>단순 for문으로 출력</h1>
+<% for(let i=0; i < context.rank.length; i++) { %>
+    <%= context.rank[i] %>
+<% }%>
+<hr>
+<h1>이중 for문으로 출력</h1>
+<style>
+    table {border: 1px solid pink; border-collapse: collapse;}
+    tr, th, td {
+        border: 1px solid pink;
+    }
+</style>
+<table>
+<% for(let a = 0; a < context.rank.length; a++) { %>
+    <tr>
+        <% for(let j=0; j < context.rank[0].length; j++) { %>
+            <td>
+                <%= context.rank[a][j] %>
+            </td>
+        <% } %>
+    </tr>
+<% }   %>
+</table>
